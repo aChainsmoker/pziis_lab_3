@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Безопасные данные</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main class="container">
+  <nav class="tabs" aria-label="Тип данных">
+    <button id="tab-public" class="tab active" type="button" onclick="selectTab('public-data')">Неконфиденциальные данные</button>
+    <button id="tab-confidential" class="tab" type="button" onclick="selectTab('confidential')">Конфиденциальные данные</button>
+  </nav>
+  <section class="card data-panel">
+    <div class="panel-header">
+      <h2 id="panel-title">Неконфиденциальные данные</h2>
+      <button type="button" onclick="addRecord()">Добавить</button>
+    </div>
+    <input id="search" type="search" placeholder="Поиск по названию и содержимому" oninput="loadData()">
+    <p id="message" class="message" hidden></p>
+    <div id="records"></div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

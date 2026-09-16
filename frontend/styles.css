@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f5f8; color: #18202a; font: 16px Arial, sans-serif; }
+.container { max-width: 1000px; margin: 32px auto; padding: 0 16px; }
+.card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 12px #0001; margin-bottom: 18px; }
+.tabs { display: flex; gap: 4px; margin-bottom: 0; }.tab { background: #dbe3ee; color: #25364d; border-radius: 8px 8px 0 0; margin: 0; }
+.tab:hover { background: #dbe3ee; color: #25364d; }.tab.active { background: #fff; color: #2563eb; font-weight: bold; }
+.data-panel { border-radius: 0 12px 12px 12px; }.panel-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }.panel-header h2 { margin: 0; }
+input, textarea { display: block; width: 100%; padding: 11px; margin: 8px 0 14px; border: 1px solid #ccd3dc; border-radius: 7px; font: inherit; }
+textarea { min-height: 150px; resize: vertical; } button { border: 0; border-radius: 7px; padding: 10px 16px; margin: 4px; background: #2563eb; color: #fff; cursor: pointer; font: inherit; } button:hover { background: #1d4ed8; }
+.record { display: flex; justify-content: space-between; gap: 16px; border: 1px solid #e0e5eb; padding: 14px; border-radius: 8px; margin: 10px 0; }.record h3 { margin: 0 0 5px; }.record p { white-space: pre-wrap; margin: 0; }.record-actions { display: flex; align-items: center; white-space: nowrap; }
+.danger { background: #dc2626; }.danger:hover { background: #b91c1c; }.empty, .message, .form-hint { color: #687789; }.error { color: #b91c1c; }.form-card { max-width: 700px; margin: auto; }.back { background: #64748b; margin-left: 0; } label { display: block; font-weight: bold; margin-top: 12px; }
+@media (max-width: 750px) { .record { display: block; }.record-actions { margin-top: 12px; }.tabs { flex-direction: column; }.data-panel { border-radius: 12px; }.panel-header { align-items: flex-start; flex-direction: column; } }

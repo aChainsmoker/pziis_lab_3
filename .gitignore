@@ -1,0 +1,10 @@
+__pycache__/
+*.db
+.env
+task/
+*_images/
+*_review*/
+.venv/
+analysis/
+*.dmp
+dumps/
